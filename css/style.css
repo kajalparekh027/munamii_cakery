@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  text-align: center;
+}
+
+
+#header img {
+  width: 50%;
+}
+
+#header li {
+  display: inline-block;
+  padding: 2%;
+}
+
+#index-main,
+#contact-main,
+#about-main {
+  width: 80%;
+  text-align: justify;
+  padding-left: 20%;
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header-titles a {
+  text-decoration: none;
+}
+
+#header-titles {
+  padding-top: 10%;
+  text-align: center;
+  float: right;
+  width: 50%;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+#header-image {
+  width: 50%;
+  padding-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+  float: left;
+}
+
+#product-list img {
+  width: 200px;
+  height: auto;
+}
+
+#product-list {
+  width: 50%;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.raw {
+  display: flex;
+
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.myimg {}
+
+.raw img {
+
+  width: 95%;
+  height: auto;
+  border: 6px solid #e1d9ec;
+}
+
+.raw-text {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.item {
+
+  padding-top: 10%;
+  width: 33%;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+
+#wedding-cake img {
+  padding-top: 10px;
+  padding-bottom: 7px;
+
+}
+
+#wedding-cake {
+
+  padding-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+  float: left;
+}
+
+#cup-cake div {
+  padding-top: 2%;
+  position: relative;
+  bottom: 0;
+}
+
+#cup-cake {
+  width: 50%;
+  padding-top: 14%;
+  padding-right: 25%;
+  /* padding-right: 30%; */
+  margin-right: 0%;
+  text-align: center;
+  float: left;
+  vertical-align: bottom;
+
+}
+
+@media only screen and (max-width: 620px) {
+  .raw {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .item {
+    width: auto;
+  }
+
+  /* For mobile phones: */
+  #header-image,
+  #header-titles {
+    width: 100%;
+  }
+
+  #header-titles {
+    padding-top: 0%;
+  }
+
+  #content {
+    padding-bottom: 0;
+  }
+
+  footer {
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+  }
+
+
+  #cup-cake {
+    padding-left: 30%;
+    width: auto;
+    left: auto;
+    flex-direction: column;
+  }
+
+  #wedding-cake {
+    width: auto;
+    text-align: center;
+    float: left;
+  }
+}
